@@ -75,7 +75,7 @@ engine.runRenderLoop(() => {
 
 
 ```
-* In order to learn all of this I used [this video](https://youtu.be/eQH4273wy7w?is=jNAuGI6tOlqUNR9E)
+* In order to learn all of this I used [this video](https://youtu.be/eQH4273wy7w?is=jNAuGI6tOlqUNR9E). The video was really helpful when starting
 
 
 
