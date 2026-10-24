@@ -1,43 +1,28 @@
-import { Engine, Scene, FreeCamera, Vector3, HemisphericLight, MeshBuilder } from '@babylonjs/core';
+// canvas
+const canvas = document.getElementById('renderCanvas')
 
-// Get the canvas element
-const canvas = document.getElementById("renderCanvas");
+// crate a babyLon js engine
+const engine = new BABYLON.Engine(canvas,true);
 
-// Generate the BABYLON 3D engine
-const engine = new Engine(canvas, true);
+function createScene(){
+    //scene
+    const scene = new BABYLON.Scene(engine);
+    //cam (there are different types)
+    const camerca = new BABYLON.FreeCamera('apple', new BABYLON.Vector3(0,0,0), scene) 
 
-// Create the scene
-const createScene = function () {
-    const scene = new Scene(engine);
 
-    // This creates and positions a free camera
-    const camera = new FreeCamera("camera1", new Vector3(0, 5, -10), scene);
-    camera.setTarget(Vector3.Zero());
-    camera.attachControl(canvas, true);
+    //light
+    const light = new BABYLON.HemisphericLight('light', new BABYLON.Vecotr3(0,1,0), scene)
 
-    // This creates a light, aiming 0,1,0 - to the sky
-    const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
-    light.intensity = 0.7;
+return scene
+}
 
-    // Built-in 'sphere' shape
-    const sphere = MeshBuilder.CreateSphere("sphere", { diameter: 2, segments: 32 }, scene);
-    sphere.position.y = 1;
-
-    // Built-in 'ground' shape
-    MeshBuilder.CreateGround("ground", { width: 6, height: 6 }, scene);
-
-    return scene;
-};
-
+// create our scene
 const scene = createScene();
 
-// Register a render loop to repeatedly render the scene
-engine.runRenderLoop(function () {
-    scene.render();
-});
 
-// Watch for browser/canvas resize events
-window.addEventListener("resize", function () {
-    engine.resize();
+engine.runRenderLoop(() => {
+    scene.render();
+
 });
 
