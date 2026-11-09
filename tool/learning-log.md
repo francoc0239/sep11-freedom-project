@@ -89,7 +89,7 @@ const game = new Phaser.Game();
 ```
 * this allows phaser to set up a background thats ready to launch your game. its the heart of our game. now we can add things. 
 * you can change ther color of the size of it
-* in order to do that you havr to assign any name to the background 
+* in order to do that you have to assign any name to the background 
 ```js
 const apples67{
     scale:{
@@ -104,20 +104,66 @@ const game = new Phaser.Game(apples67)
 * what this code did is that we gave the const a name called apples67
     * then we can give it new properties like the height, color, ect.
 * something else we can add is a scaler where it scales down or up the game and your things in the background
-'''js 
+
+```js 
 const apples67{
-    scale:{
-        width:#,
-        height:#,
-        mode: Phaser.Scale.FIT,
-    },
-    backgroundColor:any color you want,
-}
+   scale:{
+   width:#,
+   height:#,
+    mode: Phaser.Scale.FIT,
+ },
+   backgroundColor:any color you want,
+  }
 const game = new Phaser.Game(apples67)
-'''
-* this keeps our ratio the same as the screen changes
+```
+
+* this keeps our ratio the same as the screen 
+    * I tried to make the box very small and i uses width 100 and height 53 this is how it looked
+![eju](../images/tinker67.png)
+
+
 * we can change the type or render we use by changing the type `type: Phaser.CANVAS` or `type: Phaser.WEBGL` 
     * `type: Phaser.AUTO` just picks the best render your laptop can use. 
+* `scene,` is used in order to seperate things like a loading screen, a specific scene to connect everything together. 
+* you have to make a new file of your scene name and you can put things inside that file. 
+    * then you have to apply it back to your game background
+    * ex 
+
+    ```js 
+    import{loading} from './scenes/loading.js';// this is where were getting our scene from
+
+    const apple67 = { //name of our background 
+    type: Phaser.AUTO, // the type of render you want to use
+    scene: loading,//the name of the scene your using
+    scale: { // the propities of your background and scene
+        width: 100,
+        height:63,
+        mode: Phaser.Scale.FIT, // this allows your scene to fit no matter the size of background
+    },
+    background.Color:'028af8'  // this is just a blue background
+    }
+
+    ```
+    * this is an example of a full gamr scene 
+        * you can now add your sprites
+        * your background you want to use 
+* How to render images? (important)
+    * this is our scene that we assigned `loading`
+    ``` js 
+    export class loading extends Phaser.Scene{// this allows the other file to find this scene
+        constructor(){
+            super({
+                key:`loading` // this is now called loading
+            })
+        }
+    }
+
+    ```
+    
+
+
+
+* all of this can be found in [this video](https://youtu.be/PeQn9CmVIgM?is=IBaJ6hRbsTtz92tq)
 
 
 <!-- 
