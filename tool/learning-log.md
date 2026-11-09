@@ -81,8 +81,9 @@ engine.runRenderLoop(() => {
 
 
 
-### X/X/XX:
-* Text
+### 11/8/26:
+* in this learning log, im going to test out phaser. I heard it would be good for my project. maybe i'll like it.
+*  
 
 
 <!-- 
