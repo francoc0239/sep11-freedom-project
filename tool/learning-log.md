@@ -83,7 +83,41 @@ engine.runRenderLoop(() => {
 
 ### 11/8/26:
 * in this learning log, im going to test out phaser. I heard it would be good for my project. maybe i'll like it.
-*  
+*  in order to start a new game in js you need to type 
+```js 
+const game = new Phaser.Game();
+```
+* this allows phaser to set up a background thats ready to launch your game. its the heart of our game. now we can add things. 
+* you can change ther color of the size of it
+* in order to do that you havr to assign any name to the background 
+```js
+const apples67{
+    scale:{
+        width:#,
+        height:#,
+    },
+    backgroundColor:any color you want,
+}
+const game = new Phaser.Game(apples67)
+
+```
+* what this code did is that we gave the const a name called apples67
+    * then we can give it new properties like the height, color, ect.
+* something else we can add is a scaler where it scales down or up the game and your things in the background
+'''js 
+const apples67{
+    scale:{
+        width:#,
+        height:#,
+        mode: Phaser.Scale.FIT,
+    },
+    backgroundColor:any color you want,
+}
+const game = new Phaser.Game(apples67)
+'''
+* this keeps our ratio the same as the screen changes
+* we can change the type or render we use by changing the type `type: Phaser.CANVAS` or `type: Phaser.WEBGL` 
+    * `type: Phaser.AUTO` just picks the best render your laptop can use. 
 
 
 <!-- 
