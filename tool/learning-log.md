@@ -176,6 +176,8 @@ const game = new Phaser.Game(apples67)
 
     ```
     * this allows us to import new things like characters into the scene you want. 
+* a lot of these concepts are new but understanding them is easier then babylon. 
+* one question i still havr is can i make things 3d in this world and how can i make my own sprites? 
 
 
 
