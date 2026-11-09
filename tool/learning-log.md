@@ -159,7 +159,24 @@ const game = new Phaser.Game(apples67)
     }
 
     ```
-    
+    * there are 4 different methods of adding accets 
+        * `init()`
+        * `preload()`
+        * `create()`
+        * `update()`
+    * there are different ways to load different things 
+        * `this.load.image('background, (url)')`
+            * background is the key
+        * example by using my own words
+
+    ```js
+    preload(){
+        this.load.image('loading','assets/loading.png')// the loading is the key and the assets/loading.png is out actual image/url 
+    }
+
+    ```
+    * this allows us to import new things like characters into the scene you want. 
+
 
 
 
