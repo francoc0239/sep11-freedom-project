@@ -9,21 +9,21 @@ Features
 * It has build in physics
 * It has scenes where you can connect them together and have more organization 
 * It can also make you different things like 
-    * backgrounds 
-    * characters 
-    * music 
-    * textures 
-    * lighting 
+    * Backgrounds 
+    * Characters 
+    * Music 
+    * Textures 
+    * Lighting 
 
 While [Babylon](https://www.babylonjs.com/) has a lot of 3D modeling and is mostly used for 3D games. You have to do most of the background and characters on your own using another website. Here are the features 
 
 Features 
-* you can add your 3D model 
-* you can create 3D shapes
-* you have to create all of it
-* it also has physics/movement
-* it has different types of camera
-* it has shaders 
+* You can add your 3D model 
+* You can create 3D shapes
+* You have to create all of it
+* It also has physics/movement
+* It has different types of camera
+* It has shaders 
 
 Here is some of the things I did while tinkering. 
 
