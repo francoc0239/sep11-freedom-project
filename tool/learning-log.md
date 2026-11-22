@@ -263,7 +263,7 @@ const game = new Phaser.Game(apples67)
 - Here is everything I right now
 
 ```js
-const backGround{
+const backGround={
     scale:{
         width:fill, // scene takes up full screen
         height:fill,
