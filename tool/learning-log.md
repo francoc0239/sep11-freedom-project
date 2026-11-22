@@ -260,7 +260,7 @@ const game = new Phaser.Game(apples67)
         - phaser flip the image across the x axis
     - you can use `imageName.flipY = true`
         - phaser flip image on the Y axis
-- Here is everything I right now
+- Here is everything I know right now
 
 ```js
 const backGround={
