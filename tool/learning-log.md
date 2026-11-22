@@ -300,6 +300,7 @@ const game = new Phaser.Game(backGround) // name of our background is backGround
 * Another question is how can we be able to move objects at random or a specific time when needed?
 * Next thing im going to try it trying to learn how to make the images or characters move when i want to move it
 
+[Here](https://youtu.be/PeQn9CmVIgM?is=IBaJ6hRbsTtz92tq) is the video I used to learn today. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
